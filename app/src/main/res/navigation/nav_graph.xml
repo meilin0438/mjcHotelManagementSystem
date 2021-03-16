@@ -3,7 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
- >
+    app:startDestination="@id/nav_home">
 
 
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mjchotelmanagementsystem.Home.HomeFragment"
+        android:label="MJC"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_checkInOut"
+            app:destination="@id/nav_checkInOut" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_myBooking"
+            app:destination="@id/nav_myBooking" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_checkInOut"
+        android:name="com.example.mjchotelmanagementsystem.CheckInOut.checkInOut"
+        android:label="Check In / Out"
+        tools:layout="@layout/fragment_check_in_out" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_myBooking"
+        android:name="com.example.mjchotelmanagementsystem.myBooking.myBooking"
+        android:label="My Booking"
+        tools:layout="@layout/fragment_my_booking" >
+
+    </fragment>
 </navigation>

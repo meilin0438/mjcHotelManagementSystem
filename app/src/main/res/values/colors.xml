@@ -11,5 +11,6 @@
     <!--Check In / Out-->
     <color name="bgDrawer">#FFC040D6</color>
     <color name="bgChkInOut">#7AFFBC</color>
+    <color name="bgMyBooking">#8FF8E3</color>
     <color name="textchkInOut">#2000FF</color>
 </resources>

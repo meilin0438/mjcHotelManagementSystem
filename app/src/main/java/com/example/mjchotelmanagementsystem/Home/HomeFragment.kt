@@ -25,9 +25,11 @@ class HomeFragment : Fragment() {
         val button_order: Button =root.findViewById(R.id.button_order)
 
 
+
+
         button_chkinout.setOnClickListener{
             findNavController().navigate(R.id.action_nav_home_to_nav_checkInOut)
-            onDestroyView()
+
         }
 
         button_mybooking.setOnClickListener {
@@ -43,8 +45,6 @@ class HomeFragment : Fragment() {
     }
 
 
-
-
    override fun onDestroy() {
 
         super.onDestroy()
@@ -54,11 +54,9 @@ class HomeFragment : Fragment() {
         fragmentTransaction.remove(R.id.fragment_home, fragment)
         fragmentTransaction.commit()*/
 
-
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-
     }
 }
